@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874728226088",
+    "project_id": "weight-tracker-ff370",
+    "storage_bucket": "weight-tracker-ff370.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874728226088:android:c9eb55e1ef83087184a41d",
+        "android_client_info": {
+          "package_name": "com.example.weight_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874728226088-i37baoll2njcn8lg26c2s10je2feo910.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtV3b-EcvXOjtIbMS-Cx6qREj-H7j5n9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874728226088-i37baoll2njcn8lg26c2s10je2feo910.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
