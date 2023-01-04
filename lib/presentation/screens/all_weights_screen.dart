@@ -86,12 +86,8 @@ class AllWeightsScreen extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
             child: Slidable(
-              key: Key(weightModel.weight),
               endActionPane: ActionPane(
                 motion: const StretchMotion(),
-                dismissible: DismissiblePane(
-                  onDismissed: () => _deleteWeight(context, docId: doc.id),
-                ),
                 children: [
                   SlidableAction(
                     onPressed: (ctx) =>
