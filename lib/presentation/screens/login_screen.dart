@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weight_tracker/bussiness_logic/cubit/auth/auth_cubit.dart';
+import 'package:weight_tracker/core/utils/app_assets.dart';
 import 'package:weight_tracker/core/utils/app_colors.dart';
 import 'package:weight_tracker/core/utils/app_strings.dart';
 
@@ -55,9 +56,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 80),
               const Image(
-                image: NetworkImage(
-                  AppStrings.loginImage,
-                ),
+                image: AssetImage(ImageAssets.loginImage),
                 fit: BoxFit.cover,
                 width: double.infinity,
               ),

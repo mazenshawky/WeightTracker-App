@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weight_tracker/bussiness_logic/cubit/add_weight/add_weight_cubit.dart';
+import 'package:weight_tracker/core/utils/app_assets.dart';
 import 'package:weight_tracker/presentation/components/my_textfield.dart';
 
 import '../../bussiness_logic/cubit/auth/auth_cubit.dart';
@@ -78,9 +79,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 200),
                 const Image(
-                  image: NetworkImage(
-                    AppStrings.homeImage,
-                  ),
+                  image: AssetImage(ImageAssets.homeImage),
                   fit: BoxFit.cover,
                   width: double.infinity,
                 ),
