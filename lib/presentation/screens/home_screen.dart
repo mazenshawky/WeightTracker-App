@@ -70,13 +70,21 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
         body: SingleChildScrollView(
+          reverse: true,
           padding: const EdgeInsets.symmetric(horizontal: 28.0),
           child: Form(
             key: _weightFormKey,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const SizedBox(height: 350),
+                const SizedBox(height: 200),
+                const Image(
+                  image: NetworkImage(
+                    AppStrings.homeImage,
+                  ),
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                ),
+                const SizedBox(height: 35),
                 MyTextField(controller: weightController),
                 const SizedBox(height: 15),
                 ElevatedButton(
@@ -88,6 +96,7 @@ class HomeScreen extends StatelessWidget {
                   onPressed: () => _goNext(context),
                   child: const Text(AppStrings.viewAllWeights),
                 ),
+                const SizedBox(height: 15),
                 _buildAddWeightBloc(),
               ],
             ),

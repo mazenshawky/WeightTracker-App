@@ -76,7 +76,6 @@ class AllWeightsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(AppStrings.allWeights),
-        automaticallyImplyLeading: false,
       ),
       body: FirestoreListView<Weight>(
         query: BlocProvider.of<AllWeightsCubit>(context).viewWeights(),

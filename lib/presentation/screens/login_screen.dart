@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weight_tracker/bussiness_logic/cubit/auth/auth_cubit.dart';
+import 'package:weight_tracker/core/utils/app_colors.dart';
 import 'package:weight_tracker/core/utils/app_strings.dart';
 
 import '../../config/routes/app_routes.dart';
@@ -39,15 +40,28 @@ class LoginScreen extends StatelessWidget {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text(AppStrings.login),
-          automaticallyImplyLeading: false,
-        ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 28),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
             children: [
+              const SizedBox(height: 200),
+              const Text(
+                AppStrings.appName,
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.kPrimaryColor,
+                ),
+              ),
+              const SizedBox(height: 80),
+              const Image(
+                image: NetworkImage(
+                  AppStrings.loginImage,
+                ),
+                fit: BoxFit.cover,
+                width: double.infinity,
+              ),
+              const SizedBox(height: 80),
               ElevatedButton(
                 onPressed: () => _signIn(context),
                 child: const Text(AppStrings.login),
