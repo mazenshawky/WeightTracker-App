@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String appName = 'Weights Tracker';
+  static const String appName = 'Weight Tracker';
   static const String noRouteFound = 'No Route Found';
   static const String login = 'Login';
   static const String home = 'Home';
