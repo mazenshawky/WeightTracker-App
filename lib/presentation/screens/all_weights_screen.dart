@@ -71,6 +71,9 @@ class AllWeightsScreen extends StatelessWidget {
     }
   }
 
+  String _filterDateTime(BuildContext context, {required DateTime dateTime}) =>
+      BlocProvider.of<AllWeightsCubit>(context).filterDateTime(dateTime);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,6 +108,9 @@ class AllWeightsScreen extends StatelessWidget {
               child: ListTile(
                 title: Text(weightModel.weight),
                 tileColor: AppColors.kPrimaryLightColor,
+                trailing: Text(
+                  _filterDateTime(context, dateTime: weightModel.createdAt),
+                ),
               ),
             ),
           );

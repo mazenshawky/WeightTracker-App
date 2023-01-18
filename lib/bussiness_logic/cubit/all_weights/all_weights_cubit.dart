@@ -33,4 +33,9 @@ class AllWeightsCubit extends Cubit<AllWeightsState> {
 
     docWeight.update({'weight': newWeight});
   }
+
+  String filterDateTime(DateTime dateTime) {
+    String dateTimeString = dateTime.toString();
+    return dateTimeString.substring(0, dateTimeString.length - 7);
+  }
 }
